@@ -1,10 +1,10 @@
 import Sequelize from "sequelize"
 
 const sequelize = new Sequelize ({
-    "username": "root",
+    "username": "admin",
     "password": "tCbDrBcT64px8#",
     "database": "system_db",
-    "host": "127.0.0.1",
+    "host": "database-1.c9wooo4ukw0f.sa-east-1.rds.amazonaws.com",
     "dialect": "mysql"
 })
 
