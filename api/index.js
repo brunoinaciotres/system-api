@@ -13,7 +13,7 @@ app.use('/test', (req, res) => {
 })
 
 app.listen(PORT, (req, res) => {
-    return res.send("Server running on PORT " + PORT)
+    console.log("server running on port " + PORT)
 })
 
 
