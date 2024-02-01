@@ -11,15 +11,8 @@ app.use("/orders", orderRouter)
 app.use('/test', (req, res) => {
     res.send("running fine")
 })
-app.listen(PORT, () => {
-    console.log("Server running on PORT " + PORT)
+app.listen(PORT, (req, res) => {
+    return res.send("Server running on PORT " + PORT)
 })
 
-process.on('SIGINT', () => {
-    console.log('Encerrando o servidor...');
-    server.close(() => {
-      console.log('Servidor encerrado.');
-      process.exit(0);
-    });
-  });
 
