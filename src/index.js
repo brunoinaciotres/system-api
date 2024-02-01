@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors())
 app.use("/orders", orderRouter)
 
-app.use('/test', () => {
+app.use('/test', (req, res) => {
     res.send("running fine")
 })
 app.listen(PORT, () => {
