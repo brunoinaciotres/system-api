@@ -5,7 +5,7 @@
   },
   "tsup": {
     "entry": [
-      "src/index.ts"
+      "api/index.js"
     ],
     "splitting": false,
     "sourcemap": true,
