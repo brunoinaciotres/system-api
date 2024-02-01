@@ -15,3 +15,11 @@ app.listen(PORT, () => {
     console.log("Server running on PORT " + PORT)
 })
 
+process.on('SIGINT', () => {
+    console.log('Encerrando o servidor...');
+    server.close(() => {
+      console.log('Servidor encerrado.');
+      process.exit(0);
+    });
+  });
+
