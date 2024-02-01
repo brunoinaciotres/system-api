@@ -1,6 +1,9 @@
 import express from 'express'
 import orderRouter from './routes/ordersRouter.js'
 import cors from 'cors'
+import serverless from "serverless-http";
+
+
 const app = express()
 const PORT = process.env.PORT || 3030
 
@@ -16,4 +19,5 @@ app.listen(PORT, (req, res) => {
     return console.log("server running on port " + PORT)
 })
 
+export const handler = serverless(app);
 
