@@ -8,7 +8,9 @@ app.use(express.json())
 app.use(cors())
 app.use("/orders", orderRouter)
 
-app.use('/test', "running fine")
+app.use('/test', () => {
+    res.send("running fine")
+})
 app.listen(PORT, () => {
     console.log("Server running on PORT " + PORT)
 })
