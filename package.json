@@ -13,8 +13,8 @@
     "sequelize-cli": "^6.6.2"
   },
   "scripts": {
-    "start": "node ./api/index.js",
-    "dev": "nodemon ./api/index.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "build": "npm run start"
   }
 }
